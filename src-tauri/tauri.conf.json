@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "aerofetch",
+  "productName": "AeroFetch",
   "version": "0.1.0",
   "identifier": "com.galav.aerofetch",
   "build": {
@@ -12,9 +12,11 @@
   "app": {
     "windows": [
       {
-        "title": "aerofetch",
-        "width": 800,
-        "height": 600
+        "title": "AeroFetch - YouTube Video Downloader",
+        "width": 900,
+        "height": 700,
+        "minWidth": 800,
+        "minHeight": 600
       }
     ],
     "security": {
@@ -30,6 +32,12 @@
       "icons/128x128@2x.png",
       "icons/icon.icns",
       "icons/icon.ico"
-    ]
+    ],
+    "externalBin": ["binaries/yt-dlp"]
+  },
+  "plugins": {
+    "shell": {
+      "open": true
+    }
   }
 }
