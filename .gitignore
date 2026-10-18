@@ -1,0 +1,17 @@
+# Node dependencies & caches
+node_modules/
+.vite/
+dist/
+
+# Rust build target
+src-tauri/target/
+src-tauri/gen/
+
+# Optional: Large sidecar binaries (if you prefer downloading them in CI/setup scripts rather than tracking in git)
+# src-tauri/binaries/
+
+# Environment and system files
+.env
+.env.*
+.DS_Store
+*.log
